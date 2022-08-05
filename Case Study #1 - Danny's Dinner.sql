@@ -11,7 +11,7 @@ GROUP BY s.customer_id
 ---- 2. How many days has each customer visited the restaurant?
 SELECT customer_id, COUNT(DISTINCT order_date) AS Visit_Count
 FROM sales
-GROUP BY customer_ids
+GROUP BY customer_id
 
 -- 3. What was the first item from the menu purchased by each customer?
 WITH date_rank_cte AS 
